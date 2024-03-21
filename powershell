@@ -12,5 +12,6 @@ COMANDO / ABREVIACION
 "-EncodedCommand $encodedCommand" / "-enco" / "-ec"  ----> Ejecuta comandos o scripts encodeados en base64
 "-NoProfile" ----> Asi no carga perfil de usuario y quizas puedes evadir alguna restriccion aplicada a ese usuario
 "-Version X" ----> Si especificas la version al llamar al ejecutable de powershell, downgradeas la version a la que hayas especificado : "PowerShell -Version 2" 
+"Select-Object X" ----> El output de un comando se considera "object" , cada tipo de output, por ejemplo Get-Process devuelve varias columnas, cada una de ellas se consideraria un objeto, si quieres filtrar puedes hacer una | y meterle un Select-Object NombreDeColumna 
 
 
