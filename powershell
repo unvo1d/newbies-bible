@@ -13,5 +13,28 @@ COMANDO / ABREVIACION
 "-NoProfile" ----> Asi no carga perfil de usuario y quizas puedes evadir alguna restriccion aplicada a ese usuario
 "-Version X" ----> Si especificas la version al llamar al ejecutable de powershell, downgradeas la version a la que hayas especificado : "PowerShell -Version 2" 
 "Select-Object X" ----> El output de un comando se considera "object" , cada tipo de output, por ejemplo Get-Process devuelve varias columnas, cada una de ellas se consideraria un objeto, si quieres filtrar puedes hacer una | y meterle un Select-Object NombreDeColumna 
+"Format-List *" ----> Esto lo que hace es mostrar las propiedades del output de una manera legible, hay algunos objetos con un viaje de propiedades, asi puedes saber cual te interesa para filtrar, esta tambien Format-Table pero igual por el ancho dep antalla no muestra todas, mejor usar Format-List. 
+                      Hay que tener en cuenta que si hay un monton de objetos, con un monton de propiedades, va a tardar un rato en listar
+"Get-Alias -Defionition nombreDelComando" ----> Con esto vemos los alias asociados a un comando, no le veo mucha utilidad para el pentest pero bueno, si vemos que un comando es un coñazo podemos ver si existe un alias (o crearlo...)
+
+"Select-String -Path elPathDondeQueremosBUscar\*.txt -Pattern loQueEstamosBUscando" ----> Para filtrar los archivos de un directorio en funcion de su contenido : Select-Stirng -Path C:\users\user\Documents\*.txt -Pattern pass* 
+"Get-Content" ----> el "cat" de linux de toda la vida
+"$_" ----> Se refiere al objeto actual, esto se usa en bucles tipo for o for each para referirse al objeto con el que se esta trabajando en esa iteracion : ls -r | % {Get-Content _$}
+"%" ----> esto significa ForEach del resultado, se usa sobre todo en pipes : "ls -r -File *.txt | % {Select-String -Path $_ -Pattern pass} 
+"Get-Module" ----> Te lista todos los modulos IMPORTADOS disponibles
+"Get-Module -ListAvailable" ----> Te lista todos los modulos IMPORTABLES 
 
 
+BAJANDO MODULO {
+
+Te descargas el modulo
+
+Te mueves a la carpeta donde se almacenan los modulos, la cual sabes cual es corriendo el comando "$Env:PSModulePAth"
+
+Creas una carpeta con el nombre del modulo y copias todos los contenidos bajados dentro
+
+Ya podemos hacer un Import-Module nombreDelModulo
+
+Listamos comandos del modulo con Get-Command -Module nombreDelModulo
+
+}
