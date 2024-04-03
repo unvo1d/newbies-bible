@@ -25,6 +25,25 @@ COMANDO / ABREVIACION
 "Get-Module -ListAvailable" ----> Te lista todos los modulos IMPORTABLES 
 "Get-Member -MemberType Method" ----> Esto, de los objetos del output te dice el tipo de objetos y los metodos para utilizar. Get-Process |Get-Member -MemberType Method
 
+CREAR CLIENTE HTTP PARA HACER PETICIONES A UN SERVIDOR (POR EJEMPLO NUESTRO CLASICO python3 -m http.server 4444){
+
+CON GUARDADO EN DISCO
+$webclient = New-Object System.Net.WebClient
+$url = "http://direccion_del_servidor:4444/nombre_del_archivo"
+$destino = "C:\ruta\local\nombre_del_archivo"
+$webclient.DownloadFile($url, $destino)
+
+
+GUARDANDO DIRECTAMENTE EN MEMORIA 
+$webclient = New-Object System.Net.WebClient
+$contenido = $webclient.DownloadString('http://direccion_del_servidor:4444/nombre_del_archivo')
+
+
+
+}
+
+
+
 BAJANDO MODULO {
 
 Te descargas el modulo
