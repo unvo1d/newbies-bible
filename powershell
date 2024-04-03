@@ -23,7 +23,7 @@ COMANDO / ABREVIACION
 "%" ----> esto significa ForEach del resultado, se usa sobre todo en pipes : "ls -r -File *.txt | % {Select-String -Path $_ -Pattern pass} 
 "Get-Module" ----> Te lista todos los modulos IMPORTADOS disponibles
 "Get-Module -ListAvailable" ----> Te lista todos los modulos IMPORTABLES 
-
+"Get-Member -MemberType Method" ----> Esto, de los objetos del output te dice el tipo de objetos y los metodos para utilizar. Get-Process |Get-Member -MemberType Method
 
 BAJANDO MODULO {
 
