@@ -58,3 +58,12 @@ Ya podemos hacer un Import-Module nombreDelModulo
 Listamos comandos del modulo con Get-Command -Module nombreDelModulo
 
 }
+
+
+
+Invoke-Obfuscation {
+https://github.com/danielbohannon/Invoke-Obfuscation
+
+
+}
+
