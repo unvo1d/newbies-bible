@@ -1,0 +1,38 @@
+Recursos
+  zonetransfer.me
+  domaintools.com
+
+  
+Pasive{
+  Whois ----> info general
+  Host ----> te dice las IP relacionadas al dominio, ej Host google.es : 142.250.201.67
+      Whois de la ip que te da Host -> te da info no del dominio sino de a quien pertenece esa IP (puede tener otro dueño)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+              Uso del WHOIS de Dominio
+            
+                Identificación de Puntos Débiles en la Gestión de Dominios:
+                    Un whois de dominio puede revelar si un dominio está cerca de su fecha de expiración, lo que podría ser explotado para intentar secuestrar el dominio.
+                    Los detalles de contacto expuestos en registros WHOIS pueden permitir ataques de ingeniería social o phishing dirigidos a personas específicas dentro de una organización.
+            
+                Mapeo de la Estructura Organizacional:
+                    Los contactos administrativos y técnicos pueden dar pistas sobre la estructura interna de la empresa, roles importantes, y posibles vectores de ataque a través de personal clave.
+            
+                Reconocimiento Extendido:
+                    Identificación de otros dominios propiedad de la misma entidad que podrían tener configuraciones de seguridad menos robustas o que estén menos monitoreadas.
+                    Información sobre los servidores de nombres puede indicar terceras partes o servicios externos utilizados que podrían ser vectores de ataque alternativos.
+            
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                Uso del WHOIS de Dirección IP
+            
+                Localización de Servidores y Data Centers:
+                    Un whois de IP puede revelar la ubicación de los servidores, lo que puede ser crucial para entender dónde están físicamente alojados los datos y posiblemente explotar debilidades jurisdiccionales o físicas.
+                    La organización que maneja el rango de IP (usualmente un ISP) puede ser un objetivo secundario para obtener acceso a la red objetivo.
+            
+                Análisis de Infraestructura de Red:
+                    La información sobre bloques de IP y asignaciones ayuda a mapear la infraestructura de red de la organización, lo que puede ser útil para planificar ataques de denegación de servicio (DoS) o escaneo de puertos y vulnerabilidades.
+                    Identificación de subredes y otros servicios posiblemente vulnerables alrededor de la dirección IP principal.
+            
+                Rastreo de Actividades Maliciosas:
+                    En algunos casos, el rastreo de actividades sospechosas a una IP específica puede llevar a descubrir servidores comprometidos o actividades maliciosas previas que aún no han sido detectadas o mitigadas por la organización objetivo.
+  }
