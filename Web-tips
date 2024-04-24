@@ -1,0 +1,16 @@
+
+Path traversal {
+    Mirar cualquier tipo de llamada dentro de la respuesta del servidor, cualquier cosa que sea /algo o que tenga el clasico ? de php
+
+  
+}
+
+
+
+Acces control {
+    robots.txt
+    los scripts a veces enlazan con URLs que estan ocultas con security by obscurity
+    A veces en el login de un usuario tiene un parametro (puede ser > A hidden field. A cookie., A preset query string parameter) que se pueden modificar, para esto hay que crearse un usuario y bichear
+}
+
+
