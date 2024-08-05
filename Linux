@@ -1,0 +1,1 @@
+netstat -rn ---> tabla de enrutamiento del kernel, vemos redes a las que podemos acceder, util para ver a donde llegamos si hay alguna vpn o pivoting
